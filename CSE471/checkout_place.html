@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Order Placement</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+		<link href="checkout_style.css" rel="stylesheet" type="text/css">
+		<style>
+			body {background-color:#ffffff;background-image:url(https://wallpaperaccess.com/full/3133177.jpg);background-repeat:no-repeat;background-position:center;background-attachment:fixed;}
+		</style>
+	</head>
+	<body>
+		<div class="register">
+			<h1>Place Order</h1>
+			<form action="../Controller/checkout_place.php" method="post" autocomplete="off">
+				<label for="fullname">
+					<i class="fas fa-ad"></i>
+				</label>
+				<input type="text" name="fullname" placeholder="Receiver's Fullname" id="fullname" required>
+
+				<label for="address">
+					<i class="fas fa-address-card"></i>
+				</label>
+				<input type="text" name="address" placeholder="Receiver's Address" id="address" required>
+
+				<label for="phone">
+					<i class="fas fa-phone"></i>
+				</label>
+				<input type="text" name="phone" placeholder="Receiver's Phone Number" id="phone" required>
+
+				<label for="card">
+					<i class="fab fa-amazon-pay"></i>
+				</label>
+				<input type="text" name="card" placeholder="Transaction Card Number" id="card" required>
+
+				<input type="text" name="price" placeholder="Total Price" id="price" value="190" hidden>
+
+				<input type="text" name="books" placeholder="Total Books ID" id="books" value="9, 10" hidden>
+
+				<input type="text" name="takenby" placeholder="Delivery Status" id="takenby" value="none" hidden>
+				
+				<input type="submit" value="Place your order">
+				
+				<input type="reset">
+			</form>
+		</div>
+	</body>
+</html>

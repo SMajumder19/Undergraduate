@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit Loss Calculation</title>
+    <link rel="stylesheet" href="calculate.css">
+    <script src="calculate.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">  
+        <h1>Profit / Loss Status</h1>
+        <label>
+            <input id="revenue" type="number" placeholder="Total Revenue (in $): ">
+        </label>        
+        <label>
+            <input id="expense" type="number" placeholder="Total Expenses (in $): ">
+        </label>            
+        <button onclick="Calculate()">Calculate</button>
+            
+        <div class="cal-value">
+            <h4>Ouput Value: </h4>
+            <div id="cal-output"></div>
+        </div>
+        <div class="status">
+            <h4>Status: </h4>
+            <div id="cal-status"></div>
+        </div>   
+    </div>
+    
+</body>
+</html>
