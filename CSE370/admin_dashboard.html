@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+    body {background-color:#ffffff;background-image:url(https://wallpaperaccess.com/full/3539585.jpg);background-repeat:no-repeat;background-position:top left;background-attachment:fixed;}
+</style>
+</head>
+<body>
+    <div class="form">
+        <p>Hey, <?php echo $_SESSION['username']; ?>!</p>
+        <p>You are now in Admin Dashboard page.</p>
+        <p>If you want to check and change anything,click here and go to mysql phpmyadmin to access databases!</p>
+        <br>
+
+        <p><a href="http://localhost/phpmyadmin/index.php?route=/database/structure&db=test">PHP MY ADMIN</a></p>
+        <br>
+
+        <p><a href="http://localhost/test/">INDEXING OF ALL PAGES</a></p>
+        <br>
+
+        <p><a href="http://localhost/Test/admin_login.html">Logout</a></p>
+    </div>
+</body>
+</html>

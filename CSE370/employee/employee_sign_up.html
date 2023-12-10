@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Employee Sign Up Page</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <style>
+	body {background-color:#ffffff;background-image:url(https://wallpaperaccess.com/full/3539585.jpg);background-repeat:no-repeat;background-position:top left;background-attachment:fixed;}
+</style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1>Sign Up for an account if you are a departmental employee!</h1>
+          </div>
+          <div class="panel-body">
+            <form action="connect_employee.php" method="post">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="firstName"
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  name="lastName"
+                />
+              </div>
+
+
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <div>
+                  <label for="male" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="m"
+                      id="male"
+                    />Male</label
+                  >
+                  <label for="female" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="f"
+                      id="female"
+                    />Female</label
+                  >
+                  <label for="others" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="o"
+                      id="others"
+                    />Others</label
+                  >
+                </div>
+              </div>
+
+
+              <div class="form-group">
+                <label for="department">Department</label>
+                <div>
+                  <label for="finance" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="department"
+                      value="f"
+                      id="finance"
+                    />Finance</label
+                  >
+                  <label for="marketing" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="department"
+                      value="m"
+                      id="marketing"
+                    />Marketing</label
+                  >
+                  <label for="human resource" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="department"
+                      value="h"
+                      id="human resource"
+                    />Human Resource</label
+                  >
+                  <label for="kitchen" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="department"
+                      value="k"
+                      id="kitchen"
+                    />Kitchen</label
+                  >
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                />
+              </div>
+              <div class="form-group">
+                <label for="number">Phone Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number"
+                  name="number"
+                />
+              </div>
+              <input type="submit" class="btn btn-primary" />
+            </form>
+          </div>
+          <div class="panel-footer text-right">
+            <small>&copy; Indigo Restaurant</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

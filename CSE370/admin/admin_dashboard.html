@@ -1,0 +1,19 @@
+<?php
+//include auth_session.php file on all user panel pages
+include("admin_auth.php");
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="form">
+        <p>Hey, <?php echo $_SESSION['username']; ?>!</p>
+        <p>You are now in Admin Dashboard page.</p>
+        <p><a href="http://localhost/Test/admin_login.html">Logout</a></p>
+    </div>
+</body>
+</html>

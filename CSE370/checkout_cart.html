@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Checkout Page</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <style>
+	body {background-color:#ffffff;background-image:url(https://wallpaperaccess.com/full/3539358.jpg);background-repeat:no-repeat;background-position:top left;background-attachment:fixed;}
+</style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1>Checkout Here!</h1>
+          </div>
+          <div class="panel-body">
+            <form action="connect_checkout_cart.php" method="post">
+              <div class="form-group">
+                <label for="bank">Bank Account Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="bank"
+                  name="bank"
+                />
+              </div>
+              
+
+
+              <div class="form-group">
+                <label for="location">Location</label>
+                <div>
+                  <label for="gulshan" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="location"
+                      value="g"
+                      id="gulshan"
+                    />Gulshan</label
+                  >
+                  <label for="dhanmondi" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="location"
+                      value="d"
+                      id="dhanmondi"
+                    />Dhanmondi</label
+                  >
+                  <label for="bashundhara" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="location"
+                      value="b"
+                      id="bashundhara"
+                    />Bashundhara</label
+                  >
+                  <label for="farmgate" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="location"
+                      value="f"
+                      id="farmgate"
+                    />Farmgate</label
+                  >
+                </div>
+              </div>
+
+
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                />
+              </div>
+
+
+              <div class="form-group">
+                <label for="number">Phone Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number"
+                  name="number"
+                />
+              </div>
+
+
+              <input type="submit" class="btn btn-primary" />
+            </form>
+          </div>
+          <div class="panel-footer text-right">
+            <small>&copy; Indigo Restaurant</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
